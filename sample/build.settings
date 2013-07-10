@@ -1,0 +1,45 @@
+settings =
+{
+	--[[
+	orientation = {
+		default = "portrait", 
+		supported = { "portrait", },
+		-- supported = { "landscapeLeft", "landscapeRight" },
+		-- supported = { "landscapeLeft", "landscapeRight", "portrait", "portraitUpsideDown", },
+	},
+	--]]
+
+        -- For Android, the internet permission is required
+        android = {
+                usesPermissions = {
+                        "android.permission.INTERNET",
+                }
+        }
+
+	iphone =
+	{
+		plist =
+		{
+			-- UIApplicationExitsOnSuspend = true, -- default is false
+			CFBundleIconFile = "Icon.png",
+			CFBundleIconFiles =
+			{
+				"Icon.png", 
+				"Icon@2x.png", 
+				"Icon-72.png", 
+			},
+
+		},
+	},
+
+	plugins =
+	{
+		-- key is the name passed to Lua's 'require()'
+		["plugin.amplitude"] =
+		{
+			-- required
+			publisherId = "com.amplitude",
+		},
+	},
+
+}
