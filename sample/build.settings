@@ -9,13 +9,6 @@ settings =
 	},
 	--]]
 
-        -- For Android, the internet permission is required
-        android = {
-                usesPermissions = {
-                        "android.permission.INTERNET",
-                }
-        }
-
 	iphone =
 	{
 		plist =
