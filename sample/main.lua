@@ -37,7 +37,7 @@ loginBtn = widget.newButton({
 loginBtn.x = display.contentWidth * 0.5
 loginBtn.y = 100
 
-loginBtn:addEventListener( "touch", login )
+loginBtn:addEventListener( "tap", login )
 
 newGameBtn = widget.newButton({
   label = "New Game"
@@ -45,7 +45,7 @@ newGameBtn = widget.newButton({
 newGameBtn.x = display.contentWidth * 0.5
 newGameBtn.y = 200
 
-newGameBtn:addEventListener( "touch", newGame )
+newGameBtn:addEventListener( "tap", newGame )
 
 purchaseBtn = widget.newButton({
   label = "Purchase"
@@ -53,4 +53,4 @@ purchaseBtn = widget.newButton({
 purchaseBtn.x = display.contentWidth * 0.5
 purchaseBtn.y = 300
 
-purchaseBtn:addEventListener( "touch", purchase )
+purchaseBtn:addEventListener( "tap", purchase )
